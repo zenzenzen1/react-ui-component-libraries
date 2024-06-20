@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { FilterMatchMode } from 'primereact/api';
 import { InputText } from 'primereact/inputtext';
 
+// id, name, age, city
 const data = [
     {
         id: 1,
@@ -100,7 +101,7 @@ let DynamicTable = () => {
 
                 {/* <Tooltip target=".p-datatable" content="hold control and you can choose multiple column to sort" 
                     my='' at="center" autoHide/> */}
-                <DataTable className='p-datatable' value={data} sortMode='multiple' filters={filters}
+                <DataTable className='p-datatable' value={data} sortMode='multiple' filters={filters} showGridlines
                     paginator
                     rows={5}
                     rowsPerPageOptions={[1, 2, 3, 4, 5]}
